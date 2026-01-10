@@ -1,10 +1,12 @@
 Customer Sales Analysis Report
 
 1. Introduction
+
 The purpose of this project is to analyze customer sales data to understand purchasing behavior, identify top customers, discover sales trends, and generate actionable business insights.
 This analysis uses advanced data manipulation techniques in Python with the Pandas library and presents findings using meaningful aggregations and visualizations.
 
 2. Objectives
+
 The main objectives of this analysis are:
 - To evaluate overall sales performance
 - To identify the most valuable customers
@@ -13,7 +15,10 @@ The main objectives of this analysis are:
 - To provide recommendations for improving customer retention and revenue
 
 3. Dataset Description
+   
 This project uses two datasets:
+- sales_data.csv
+- customer_churn.csv
 
 3.1 Sales Data (sales_data.csv)
 Contains transactional sales records with the following fields:
@@ -24,28 +29,23 @@ Contains transactional sales records with the following fields:
 - OrderDate
 - Sales
 
-3.2 Customer Data (customer_data.csv)
-
+3.2 Customer Data (customer_churn.csv)
 Contains customer demographic information:
-
-CustomerID
-
-CustomerName
-
-Age
-
-Gender
+- CustomerID
+- CustomerName
+- Age
+- Gender
 
 The datasets were merged using CustomerID to create a unified view of customer purchasing behavior.
 
 4. Data Preparation
 
 Before analysis, the following preprocessing steps were performed:
-Converted order dates to datetime format
-Extracted year and month for time-based analysis
-Checked for missing or invalid values
-Ensured numerical fields were correctly formatted
-Merged customer and sales datasets
+- Converted order dates to datetime format
+- Extracted year and month for time-based analysis
+- Checked for missing or invalid values
+- Ensured numerical fields were correctly formatted
+- Merged customer and sales datasets
 These steps ensured data accuracy and consistency.
 
 5. Analysis Methodology
@@ -71,9 +71,9 @@ Used pivot tables to identify cross-selling opportunities
 6. Visual Analysis
 
 To improve interpretability, multiple visualizations were created:
-Bar charts to compare sales across regions
-Line charts to analyze monthly sales trends
-Pivot-based summaries to compare products by region
+- Bar charts to compare sales across regions
+- Line charts to analyze monthly sales trends
+- Pivot-based summaries to compare products by region
 These visual tools helped highlight trends and performance differences effectively.
 
 7. Key Findings
@@ -87,24 +87,25 @@ Repeat customers contribute significantly to overall revenue
 8. Business Insights
 
 Based on the analysis:
-High-value customers should be targeted with loyalty programs
-Inventory planning should prioritize high-performing products
-Regional marketing strategies can be customized based on performance
-Cross-selling accessories with electronics can increase order value
+CUSTOMER SALES ANALYSIS REPORT
+- Total Revenue: $12,365,048
+- Total Customers: 100
+- Average Order Value: $123,650
+- Top Customer: C00016 - $373,932
 
 9. Recommendations
 
-Introduce customer loyalty and reward programs
-Offer personalized promotions for repeat customers
-Focus marketing efforts in high-revenue regions
-Analyze customer churn to improve retention strategies
+- Introduce customer loyalty and reward programs
+- Offer personalized promotions for repeat customers
+- Focus marketing efforts in high-revenue regions
+- Analyze customer churn to improve retention strategies
 
 10. Limitations
 
-The dataset size is limited and may not reflect real-world scale
-No customer feedback or behavioral data was available
-Seasonal analysis is limited due to short time range
-Future analysis with larger datasets could provide deeper insights.
+- The dataset size is limited and may not reflect real-world scale
+- No customer feedback or behavioral data was available
+- Seasonal analysis is limited due to short time range
+- Future analysis with larger datasets could provide deeper insights.
 
 11. Conclusion
 
@@ -113,8 +114,8 @@ By combining data aggregation, merging, pivot tables, and visualization techniqu
 
 12. Future Enhancements
 
-Possible improvements include:
-Customer churn and retention modeling
-Time-series forecasting
-Dashboard creation using interactive tools
-Integration of additional customer behavior data
+- Possible improvements include:
+- Customer churn and retention modeling
+- Time-series forecasting
+- Dashboard creation using interactive tools
+- Integration of additional customer behavior data
