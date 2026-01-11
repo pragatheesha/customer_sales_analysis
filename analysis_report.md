@@ -22,19 +22,25 @@ This project uses two datasets:
 
 3.1 Sales Data (sales_data.csv)
 Contains transactional sales records with the following fields:
-- OrderID
-- CustomerID
+- Date
 - Product
+- Quantity
+- Price
+- Customer_ID
 - Region
-- OrderDate
-- Sales
+- Total_Sales
 
 3.2 Customer Data (customer_churn.csv)
 Contains customer demographic information:
 - CustomerID
-- CustomerName
-- Age
-- Gender
+- Tenure
+- MonthlyCharges
+- TotalCharges
+- Contract
+- PaymentMethod
+- PaperlessBilling
+- SeniorCitizen
+- Churn
 
 The datasets were merged using CustomerID to create a unified view of customer purchasing behavior.
 
@@ -78,20 +84,19 @@ These visual tools helped highlight trends and performance differences effective
 
 7. Key Findings
 
-The North region generates the highest total revenue
-John Smith is the most valuable customer based on total purchases
-Electronics products contribute the largest share of sales
-Sales show noticeable peaks during early months of the year
-Repeat customers contribute significantly to overall revenue
-
-8. Business Insights
-
-Based on the analysis:
 CUSTOMER SALES ANALYSIS REPORT
 - Total Revenue: $12,365,048
 - Total Customers: 100
 - Average Order Value: $123,650
 - Top Customer: C00016 - $373,932
+
+8. Business Insights
+
+Based on the analysis:
+- High-value customers should be targeted with loyalty programs
+- Inventory planning should prioritize high-performing products
+- Regional marketing strategies can be customized based on performance
+- Cross-selling accessories with electronics can increase order value
 
 9. Recommendations
 
